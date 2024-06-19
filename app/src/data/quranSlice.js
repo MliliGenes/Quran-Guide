@@ -155,7 +155,7 @@ const Quran = createSlice({
     collectionLoading: true,
     theme: initTheme,
     searchQuery: "",
-    surahsNumber: 12,
+    surahsNumber: 15,
   },
   reducers: {
     setSurahs: (state, action) => {
@@ -169,7 +169,7 @@ const Quran = createSlice({
       state.searchQuery = action.payload;
     },
     addMoreSurahs: (state, action) => {
-      state.surahsNumber += 12;
+      state.surahsNumber += 15;
     },
     logOut: (state) => {
       state.isAuthenticated = false;
